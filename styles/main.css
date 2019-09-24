@@ -1,0 +1,124 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 40, 40);
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;         /* Don't display submenu until hover of the li element */
+    position: absolute;
+    top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+    float: none;           /* Display the submenus vertically */
+    position: relative;    /* So the second submenu can be positioned within the first submenu */
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: -100%;           /* Position the second submenu at the left side of the li element */
+    top: 0;                /* Position the second submenu at the top of the li element */
+}
+#nav_menu ul li:hover > ul {
+    display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* The styles for the formatting of the multi-tier navigation menu */
+#nav_menu ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 0 30px 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: white;
+}
+#nav_menu ul li:hover ul {
+    width: 100%;
+}
+#nav_menu ul li:hover ul li a {
+    display: block;
+    width: 178px;
+    text-align: center;
+}
+.slicknav_menu {
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+    aside{
+        position: unset;
+    }
+    section{
+        float: none;
+        margin-top: 1.25em;
+        margin-left: 1em;
+    }
+    aside ul{
+        width: 13em;
+        margin: auto;
+    }
+    aside ul li a{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 800px){
+    html{
+        background: none no-repeat;
+    }
+    body{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        font-size: 90%;
+    }
+    header img{
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 479px){
+    header h2{
+        font-size: 160%;
+    }
+    header h3{
+        font-size: 95%;
+    }
+    h1{
+        font-size: 125%;
+    }
+    h2{
+        font-size: 110%;
+    }
+    h3{
+        font-size: 100%;
+    }
+}
+footer a{
+    color: #222222;
+}

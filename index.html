@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>DSUComputerClub</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+			});
+		</script>
+	</head>
+
+	<header>
 	</header>
-		<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(255, 255, 255); background-color: rgb(36, 40, 40);">
+
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="http://attendance.dsucomputer.club" class="current">Attendance</a></li>
+			<li><a  href="http://events.dsucomputer.club">Calendar</a></li>
+		</ul>
+	</nav>
+
+	<body>
 		<h1><u><b>DSU Computer Club</b></u></h1>
 		<h5> --- All meetings at 5:30PM --- </h5>
 		<br>
-		<h2>Week Events (09/16)</h2>
-		<ul>
-			<li><h3><b>Computer Club</b> 09/16</h3></li>
-				<ul>
-					<li>No meeting this week...</li>
-				</ul>
-<br>
-			<li><h3><b>Defensive Security Club</b> 09/17</h3></li>
-				<ul>
-					<li>In Defensive Security Club this week, we'll have two of our National CCDC participants present on security from a networking perspective.</li>
-				</ul>
-<br>
-			<li><h3><b>Offensive Security Club</b> 09/18</h3></li>
-				<ul>
-					<li>We will be covering some basic things to do once you have gained access to a system.</li>
-					<li>How to gain persistence for both Windows and Linux!</li>
-				</ul>
-<br>
-			<li><h3><b>Programming Club</b> 09/19</h3></li>
-				<ul>
-					<li>Continuing where we left off last week!</li>
-				</ul>
-			
-		</ul>
-<br>
-<br>
-		<h2>Week Events (09/22)</h2>
-		<ul>
-			<li><h3><b>Computer Club</b> 09/22</h3></li>
-			<ul>
-				<li>Adam Emerson will be our guest talking about Student Collaboration at the 2019 Sanford Tech Summit.</li>
-				<li>Bailey Belisario will be presenting different types of editors that may be useful to know.</li>
-			</ul>
-			<br>
-			<li><h3><b>Defensive Security Club</b> 09/23</h3></li>
-			<ul>
-				<li>There will be a presentation on Windows and Linux Firewalls</li>
-			</ul>
-			<br>
-			<li><h3><b>Offensive Security Club</b> 09/24</h3></li>
-			<ul>
-				<li>We will be giving an intro on reconnaissance and how to do it in a white-hat manner.</li>
-			</ul>
-			<br>
-			<li><h3><b>Programming Club</b> 09/25</h3></li>
-			<ul>
-				<li>### Will be added soon ###</li>
-			</ul>
 
-		</ul>
+
 	</body>
+	<footer><a href="https://kernelpoppers.slack.com/messages/CNP3XUP2T">PRAISE BE OUR LORD AND SAVIOR</a></footer>
 </html>
