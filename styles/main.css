@@ -2,14 +2,35 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     background-color: rgb(36, 40, 40);
+    max-width: 500px;
+    margin: auto;
+	text-align: center;
 }
-
+body ul {
+	padding: 0px;
+}
+body ul li {
+	max-width: 500px;
+	list-style-type: none;
+	padding: 0px;
+}
+body ul li a {
+	color: green;	
+}
+body ul li a.visited {
+	color: green;
+}
+#nav_menu {
+	text-align: center;
+}
 #nav_menu ul {
     list-style: none;
     position: relative;    /* So the first submenu can be positioned within the main menu */
+    margin: 30px 0px 30px 0px;
 }
 #nav_menu ul li {
     float: left;
+    width: 50%;
 }
 #nav_menu ul ul {
     display: none;         /* Don't display submenu until hover of the li element */
@@ -37,17 +58,16 @@ body {
 /* The styles for the formatting of the multi-tier navigation menu */
 #nav_menu ul {
     width: 100%;
-    margin: 0;
     padding: 0;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    padding: 0 30px 5px 0;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 #nav_menu ul li a.current {
@@ -92,11 +112,16 @@ body {
     html{
         background: none no-repeat;
     }
+    img {
+    	height: 100px;
+	width: 100px;
+    }
     body{
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
         font-size: 90%;
+	max-width: 80%;
     }
     header img{
         margin-bottom: 5px;
@@ -120,5 +145,5 @@ body {
     }
 }
 footer a{
-    color: #222222;
+    color: rgb(36, 40, 40);
 }
