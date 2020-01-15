@@ -20,6 +20,18 @@ body ul li a {
 body ul li a.visited {
 	color: green;
 }
+body h3 a{
+	color: white;
+}
+body h3 a.visited {
+	color: white;
+}
+body a{
+	color: green;
+}
+body a.visited{
+	color: green;
+}
 #nav_menu {
 	text-align: center;
 }
