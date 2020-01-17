@@ -22,6 +22,18 @@ header{
     box-sizing: border-box;
 }
 
+section{
+    padding-top: 30px;
+    padding-bottom: 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
 
 /* ---- stats.js ---- */
 
@@ -163,11 +175,7 @@ header{
 
 /* What we see when the page opens up */
 
-img{
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-}
+
 
 *, ::before, ::after {
     box-sizing: border-box;
@@ -204,46 +212,6 @@ img{
 
 .col-container img#trojans{
     width: 200px;
-}
-
-.about{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    position: relative;
-    overflow: hidden;
-    background: #1e2125;
-}
-
-.about-intro{
-    position: relative;
-    color: #aaa;
-}
-
-.about-col{
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 50%;
-    float: left;
-}
-
-.about-col img{
-    width: 500px;
-    border: 1px solid #cccccc;
-    margin-left: 50px;
-    margin-top: 20px;
-
-    -webkit-transition: border linear .2s, box-shadow linear .2s;
-    -moz-transition: border linear .2s, box-shadow linear .2s;
-    -o-transition: border linear .2s, box-shadow linear .2s;
-    transition: border linear .2s, box-shadow linear .2s;
-}
-
-.about-col p{
-    font-size: 28px;
-    color: #aaa;
-    margin-top: 45px;
 }
 
 .container-header {
@@ -284,9 +252,127 @@ img{
     50% { border-color: lightblue; }
 }
 
+.about{
+    background: #1e2125;
+}
 
+.section-intro{
+    position: relative;
+    color: #aaa;
+    width:210px;
+    left: 41%;
+}
 
+.section-intro h1{
+    border-bottom: 3px solid #aaa;
+    width: 175px;
+}
 
+.about-col{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+}
+
+.about-col img{
+    width: 500px;
+    border: 1px solid #cccccc;
+    margin-left: 50px;
+    margin-top: 20px;
+
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+.about-col img:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+
+.about-col p{
+    font-size: 28px;
+    color: #aaa;
+    margin-top: 45px;
+}
+
+.officers{
+    background-color: unset;
+}
+
+#officer-section-intro{
+    left: 35.5%;
+
+}
+
+#officer-intro{
+    width: 300px;
+}
+
+.row-comp{
+    width: 100%;
+    clear: both;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-offsec{
+    clear: both;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-defsec{
+    clear: both;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-prog{
+    clear: both;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.three-col{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.three-col img{
+    width: 230px;
+    padding-left: 5px;
+}
+
+.three-col p{
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+.four-col{
+}
+
+.btn-group-vertical > .btn-group::after, .btn-toolbar::after, .clearfix::after, .container-fluid::after, .container::after, .form-horizontal .form-group::after, .modal-footer::after, .nav::after, .navbar-collapse::after, .navbar-header::after, .navbar::after, .pager::after, .panel-body::after, .row::after {
+    clear: both;
+}
 
 /*div#clearback1 {*/
 /*    position: absolute;*/
@@ -306,15 +392,7 @@ img{
 
 /*}*/
 
-.about-col img:focus
-{
-    border-color: rgba(82, 168, 236, 0.8);
-    outline: 0;
-    outline: thin dotted \9;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
+
 
 /*div#about section {*/
 /*    color: #aaaaaa;*/

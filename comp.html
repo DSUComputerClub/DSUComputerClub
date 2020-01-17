@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DSUComputerClub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/particles.js"></script>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<nav class="nav">
+    <div class="logo">
+        <a href="https://dsu.edu/">
+            <img src="img/TrojanHead-removebg-preview.png" style="width: 32px;margin-top: -22px"/>
+            <span>Dakota State University</span>
+        </a>
+    </div>
+    <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">CompClub</a></li>
+            <li><a href="#">DefSec</a></li>
+            <li><a href="#">Offsec</a></li>
+            <li><a href="#">ProgClub</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+</nav>
+
+<body onload="particlesJS.load('particles-js', 'js/particles.json')">
+<div id="particles-js"></div>
+<div id="main">
+    </section>
+    <section class="officers">
+        <div class="container">
+            <div class="section-intro text-center" id="officer-section-intro"><h1 id="officer-intro">Meet the Officers</h1></div>
+            <div class="row-comp">
+                <div class="three-col">
+                    <img src="img/profile.jpg"/><br/>
+                    <p>Bailey Belisario</p>
+                </div>
+                <div class="three-col">
+
+                </div>
+                <div class="three-col">
+
+                </div>
+            </div>
+            <div class="row-offsec"></div>
+            <div class="row-defsec"></div>
+            <div class="row-prog"></div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+<script>
+    ScrollReveal().reveal('#main');
+    ScrollReveal().reveal('#test1');
+    ScrollReveal().reveal('#test2');
+</script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+
+    $(document).ready(function() {
+        $('#main').localScroll({duration:2000});
+    });
+</script>
+
+</body>
+</html>
