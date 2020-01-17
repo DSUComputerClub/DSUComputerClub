@@ -1,21 +1,3 @@
-/* === Stuff I don't care about ===*/
-
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
-
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     height: 100%;
@@ -28,8 +10,16 @@ body{
 }
 
 canvas{
-    display:block;
-    vertical-align:bottom;
+    display:inline-block;
+    vertical-align:baseline;
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 
@@ -75,14 +65,13 @@ canvas{
 
 #particles-js{
     width: 100%;
-    height: 5000px;
+    height: 100%;
+    top: 0;
     background-color: #171720;
-    background-image: url('');
     background-size: 20%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    z-index: -1;
-    position: absolute;
+    position: fixed;
 }
 
 
@@ -174,24 +163,100 @@ canvas{
 
 /* What we see when the page opens up */
 
-div#frontpage
-{
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
     position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-container{
+    float: left;
     width: 100%;
+}
+
+.col-container img#trojans{
+    width: 200px;
+}
+
+.about{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    background: #1e2125;
+}
+
+.about-intro{
+    position: relative;
+    color: #aaa;
+}
+
+.about-col{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+}
+
+.about-col img{
+    width: 500px;
+    border: 1px solid #cccccc;
+    margin-left: 50px;
+    margin-top: 20px;
+
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+.about-col p{
+    font-size: 28px;
+    color: #aaa;
+    margin-top: 45px;
+}
+
+.container-header {
     height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 30vh;
+    width: 1200px;
 }
 
-div#frontpage img
-{
-    width: 120px;
-    margin-left: 47.5%;
-    position: absolute;
-    top: 35%;
-}
-
-div#frontpage h1 {
+.col-container h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid lightblue; /* The typwriter cursor */
+    border-right: .15em solid #aaa; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation:
@@ -201,17 +266,15 @@ div#frontpage h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: #aaa;
-    padding-left: 47.5%;
-    margin-left: -310px;
-    max-width: 835px;
-    position: absolute;
-    top: 49%
+    padding-left: 65px;
+    margin-right: 140px;
+    margin-left: 155px;
 }
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0% }
-    to { width: 43% }
+    to { width: 70% }
 }
 
 /* The typewriter cursor effect */
@@ -220,31 +283,29 @@ div#frontpage h1 {
     50% { border-color: lightblue; }
 }
 
-div#clearback1 {
-    position: absolute;
-    width: 100%;
-    background-color: unset;
-    height: 200px;
-    top: 100%;
-}
 
-div#about{
-    position: absolute;
-    width: 100%;
-    background-color: #292e33;
-    height: 700px;
-    top: 100%;
-    opacity: 100%;
 
-    border: 0px solid #cccccc;
 
-    -webkit-transition: border linear .2s, box-shadow linear .2s;
-    -moz-transition: border linear .2s, box-shadow linear .2s;
-    -o-transition: border linear .2s, box-shadow linear .2s;
-    transition: border linear .2s, box-shadow linear .2s;
-}
 
-div#about:focus
+/*div#clearback1 {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    background-color: unset;*/
+/*    height: 200px;*/
+/*    top: 100%;*/
+/*}*/
+
+/*div#about{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    background-color: #292e33;*/
+/*    height: 700px;*/
+/*    top: 100%;*/
+/*    opacity: 100%;*/
+
+/*}*/
+
+.about-col img:focus
 {
     border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
@@ -254,63 +315,63 @@ div#about:focus
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
 
-div#about section {
-    color: #aaaaaa;
-    padding-top: 100px;
-    padding-bottom: 80px;
-}
+/*div#about section {*/
+/*    color: #aaaaaa;*/
+/*    padding-top: 100px;*/
+/*    padding-bottom: 80px;*/
+/*}*/
 
-div#about section h1 {
-    text-align: center;
-    font-size: 50px;
-    margin-top: -40px;
-}
+/*div#about section h1 {*/
+/*    text-align: center;*/
+/*    font-size: 50px;*/
+/*    margin-top: -40px;*/
+/*}*/
 
-div#first-col-about {
-    width: 50%;
-    float: left;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*div#first-col-about {*/
+/*    width: 50%;*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    padding-left: 15px;*/
+/*    padding-right: 15px;*/
+/*}*/
 
-div#first-col-about img {
-    width: 670px;
-}
+/*div#first-col-about img {*/
+/*    width: 670px;*/
+/*}*/
 
-div#last-col-about {
-    width: 50%;
-    float: left;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*div#last-col-about {*/
+/*    width: 50%;*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    padding-left: 15px;*/
+/*    padding-right: 15px;*/
+/*}*/
 
 
-div#computer{
-    position: absolute;
-    width: 100%;
-    background-color: #111;
-    height: 500px;
-    top: 200%;
+/*div#computer{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    background-color: #111;*/
+/*    height: 500px;*/
+/*    top: 200%;*/
 
-    border: 0px solid #cccccc;
+/*    border: 0px solid #cccccc;*/
 
-    -webkit-transition: border linear .2s, box-shadow linear .2s;
-    -moz-transition: border linear .2s, box-shadow linear .2s;
-    -o-transition: border linear .2s, box-shadow linear .2s;
-    transition: border linear .2s, box-shadow linear .2s;
-}
+/*    -webkit-transition: border linear .2s, box-shadow linear .2s;*/
+/*    -moz-transition: border linear .2s, box-shadow linear .2s;*/
+/*    -o-transition: border linear .2s, box-shadow linear .2s;*/
+/*    transition: border linear .2s, box-shadow linear .2s;*/
+/*}*/
 
-div#computer:focus
-{
-    border-color: rgba(82, 168, 236, 0.8);
-    outline: 0;
-    outline: thin dotted \9;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
+/*div#computer:focus*/
+/*{*/
+/*    border-color: rgba(82, 168, 236, 0.8);*/
+/*    outline: 0;*/
+/*    outline: thin dotted \9;*/
+/*    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);*/
+/*    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);*/
+/*    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);*/
+/*}*/
 
 
 /* Media qurey section */
