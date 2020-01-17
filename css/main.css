@@ -18,12 +18,13 @@ li{list-style:none}
 
 html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    /*height: 5000px;*/
+    height: 100%;
+    width: 100%;
 }
 
 body{
-    font:normal 75% Arial, Helvetica, sans-serif;
-    /*height: 5000px;*/
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
 }
 
 canvas{
@@ -85,23 +86,110 @@ canvas{
 }
 
 
+/* Navbar section */
+
+.nav {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 2rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 1.25rem;
+}
+
+.nav div.logo a:hover {
+    color: #aaa;
+}
+
+.nav div.logo a span{
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+    position: relative;
+    margin-top: -10px;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 54px;
+    padding: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.nav div.main_list ul li:hover {
+    background-color: black;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #aaa;
+    line-height: 65px;
+    font-size: 1.25rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #aaa;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
 /* What we see when the page opens up */
 
-#frontpage
+div#frontpage
 {
-    position: absolute;
-    top: 400px;
+    position: relative;
     width: 100%;
-
+    height: 100%;
 }
 
-#frontpage img
+div#frontpage img
 {
     width: 120px;
-    margin-left: 50%;
+    margin-left: 47.5%;
+    position: absolute;
+    top: 35%;
 }
 
-#frontpage h1 {
+div#frontpage h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid lightblue; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -113,9 +201,11 @@ canvas{
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: #aaa;
-    padding-left: 50%;
+    padding-left: 47.5%;
     margin-left: -310px;
     max-width: 835px;
+    position: absolute;
+    top: 49%
 }
 
 /* The typing effect */
@@ -130,15 +220,21 @@ canvas{
     50% { border-color: lightblue; }
 }
 
-
-
-#main{
+div#clearback1 {
     position: absolute;
     width: 100%;
-    height: 600px;
-    background-color: #51565d;
-    top: 150px;
-    opacity: 90%;
+    background-color: unset;
+    height: 200px;
+    top: 100%;
+}
+
+div#about{
+    position: absolute;
+    width: 100%;
+    background-color: #292e33;
+    height: 700px;
+    top: 100%;
+    opacity: 100%;
 
     border: 0px solid #cccccc;
 
@@ -148,7 +244,65 @@ canvas{
     transition: border linear .2s, box-shadow linear .2s;
 }
 
-#main:focus
+div#about:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+
+div#about section {
+    color: #aaaaaa;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+div#about section h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: -40px;
+}
+
+div#first-col-about {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div#first-col-about img {
+    width: 670px;
+}
+
+div#last-col-about {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+div#computer{
+    position: absolute;
+    width: 100%;
+    background-color: #111;
+    height: 500px;
+    top: 200%;
+
+    border: 0px solid #cccccc;
+
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+div#computer:focus
 {
     border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
@@ -159,3 +313,271 @@ canvas{
 }
 
 
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+    text-align:center;
+    font-size: 4rem;
+}
+.myP {
+    text-align: justify;
+    padding-left:15%;
+    padding-right:15%;
+    font-size: 20px;
+}
+@media all and (max-width:700px){
+    .myP {
+        padding:2%;
+    }
+}
