@@ -264,6 +264,7 @@ img{
 .section-intro h1{
     border-bottom: 3px solid #aaa;
     width: 175px;
+    opacity: 100%;
 }
 
 .about{
@@ -280,9 +281,10 @@ img{
 
 .about-col img{
     width: 500px;
-    border: 1px solid #cccccc;
+    border: 1px solid #1e2125;
     margin-left: 50px;
     margin-top: 20px;
+    border-radius: 30px;
 
     -webkit-transition: border linear .2s, box-shadow linear .2s;
     -moz-transition: border linear .2s, box-shadow linear .2s;
@@ -373,7 +375,7 @@ img{
 
 .calendar{
     padding-top: 40px;
-    background-color: #111;
+    background-color: unset;
     opacity: 89%;
     padding-bottom: 75px;
 }
