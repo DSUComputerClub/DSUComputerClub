@@ -9,10 +9,10 @@ body{
     height: 100%;
 }
 
-canvas{
-    display:inline-block;
-    vertical-align:baseline;
-}
+/*canvas{*/
+/*    display:inline-block;*/
+/*    vertical-align:baseline;*/
+/*}*/
 
 header{
     position: relative;
