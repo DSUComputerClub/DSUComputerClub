@@ -252,15 +252,13 @@ img{
     50% { border-color: lightblue; }
 }
 
-.about{
-    background: #1e2125;
-}
+
 
 .section-intro{
     position: relative;
     color: #aaa;
     width:210px;
-    left: 41%;
+    left: 43.1%;
 }
 
 .section-intro h1{
@@ -268,11 +266,14 @@ img{
     width: 175px;
 }
 
+.about{
+    background: #1e2125;
+}
+
 .about-col{
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
     width: 50%;
     float: left;
 }
@@ -310,7 +311,7 @@ img{
 }
 
 #officer-section-intro{
-    left: 35.5%;
+    left: 37.5%;
 
 }
 
@@ -370,8 +371,57 @@ img{
 .four-col{
 }
 
-.btn-group-vertical > .btn-group::after, .btn-toolbar::after, .clearfix::after, .container-fluid::after, .container::after, .form-horizontal .form-group::after, .modal-footer::after, .nav::after, .navbar-collapse::after, .navbar-header::after, .navbar::after, .pager::after, .panel-body::after, .row::after {
-    clear: both;
+.calendar{
+    padding-top: 40px;
+    background-color: #111;
+    opacity: 89%;
+    padding-bottom: 75px;
+}
+
+.calendar-row{
+    margin-top: 50px;
+}
+
+.calendar-col{
+    width: 100%;
+    height: 720px;
+    position: relative;
+    min-height: 1px;
+    overflow: hidden;
+    border: 10px solid #111;
+    border-radius: 180px;
+
+}
+
+.calendar-col iframe{
+    position: relative;
+    width: 100%;
+    height: 815px;
+    background-color: white;
+    margin-top: -105px;
+    border: 0px;
+    opacity: 100%
+}
+
+#cal-event-header{
+    margin-top: 0px;
+}
+
+.footer{
+    background-color: #1e2125;
+}
+
+.footer-info{
+    color: white;
+    padding-top: 30px;
+}
+
+.footer-info a{
+    color: white;
+}
+
+.footer-info a:visited{
+    color: white;
 }
 
 /*div#clearback1 {*/

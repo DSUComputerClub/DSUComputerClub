@@ -31,7 +31,7 @@
                 <li><a href="#">DefSec</a></li>
                 <li><a href="#">Offsec</a></li>
                 <li><a href="#">ProgClub</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -72,25 +72,38 @@
                 </div>
             </div>
         </section>
-        <section class="footer">
-            <div class="container">
 
+        <section class="calendar" id="events">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <h1 id="cal-event-header">Events</h1>
+                </div>
+                <div class="row calendar-row">
+                    <div class="calendar-col">
+                        <iframe src="https://dsuview.firebaseapp.com/"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-info text-center">
+                        <p>Contact</p>
+                        <p><a href="mailto: bailey.belisario@trojans.dsu.edu">bailey.belisario@trojans.dsu.edu</a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 
-
-
-
-
-
     <script>
-        ScrollReveal().reveal('#main');
-        ScrollReveal().reveal('#test1');
-        ScrollReveal().reveal('#test2');
-    </script>
+        ScrollReveal().reveal('#about');
+        ScrollReveal().reveal('#events');
+        ScrollReveal().reveal('#contact');
+        ScrollReveal().reveal('.calendar-col');
 
-    <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -111,7 +124,6 @@
             $("#mainListDiv").fadeIn();
 
         });
-
     </script>
 
 </body>
