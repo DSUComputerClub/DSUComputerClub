@@ -72,11 +72,11 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "grab"
       },
       "resize": true
     },
@@ -84,7 +84,7 @@
       "grab": {
         "distance": 400,
         "line_linked": {
-          "opacity": 1
+          "opacity": 100
         }
       },
       "bubble": {
