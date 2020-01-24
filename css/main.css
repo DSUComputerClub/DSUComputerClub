@@ -258,13 +258,16 @@ img{
     position: relative;
     color: #aaa;
     width:210px;
-    left: 43.1%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 .section-intro h1{
-    border-bottom: 3px solid #aaa;
+    border: 2px solid #aaa;
+    border-radius: 12px;
     width: 175px;
     opacity: 100%;
+    margin: auto;
 }
 
 .about{
@@ -280,10 +283,10 @@ img{
 }
 
 .about-col img{
-    width: 500px;
-    border: 1px solid #1e2125;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 465px;
+    border: 2.5px solid #aaa;
+    margin-left: 80px;
+    margin-top: 30px;
     border-radius: 30px;
 
     -webkit-transition: border linear .2s, box-shadow linear .2s;
@@ -313,12 +316,12 @@ img{
 }
 
 #officer-section-intro{
-    left: 37.5%;
+    left: 43.8%;
 
 }
 
 #officer-intro{
-    width: 300px;
+    width: 125px;
 }
 
 .row-comp{
@@ -390,7 +393,7 @@ img{
     position: relative;
     min-height: 1px;
     overflow: hidden;
-    border: 10px solid #111;
+    border: 3px solid #aaa;
     border-radius: 180px;
 
 }
