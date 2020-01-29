@@ -108,12 +108,12 @@ img{
 
 .nav div.logo a {
     text-decoration: none;
-    color: #aaa;
+    color: #aaad;
     font-size: 1.25rem;
 }
 
 .nav div.logo a:hover {
-    color: #aaa;
+    color: #aaad;
 }
 
 .nav div.logo a span{
@@ -153,13 +153,13 @@ img{
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #aaa;
+    color: #aaad;
     line-height: 65px;
     font-size: 1.25rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #aaa;
+    color: #aaad;
 }
 
 .navTrigger {
@@ -225,7 +225,7 @@ img{
 .col-container h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* The typwriter cursor */
-    border-right: .15em solid #aaa;
+    border-right: .15em solid #aaad;
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation:
@@ -234,7 +234,7 @@ img{
 
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
-    color: #aaa;
+    color: #aaad;
     padding-left: 230px;
     padding-right: 22px;
     width: 1060px;
@@ -255,20 +255,29 @@ img{
 
 
 .section-intro{
-    position: relative;
-    color: #aaa;
-    width:210px;
-    left: 43.1%;
+    color: #aaad;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 22px;
 }
 
 .section-intro h1{
-    border-bottom: 3px solid #aaa;
-    width: 175px;
+    border-bottom: 2px solid #aaad;
+    border-radius: 12px;
+    width: 227px;
     opacity: 100%;
+    margin: auto;
+}
+
+#officer-header{
+    font-size: 57px;
+    border-color: #aaad;
+    color: #aaad;
+    width: 300px;
 }
 
 .about{
-    background: #1e2125;
+    background-color: #1e2125;
 }
 
 .about-col{
@@ -280,10 +289,10 @@ img{
 }
 
 .about-col img{
-    width: 500px;
-    border: 1px solid #1e2125;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 465px;
+    border: 2.5px solid #aaad;
+    margin-left: 80px;
+    margin-top: 30px;
     border-radius: 30px;
 
     -webkit-transition: border linear .2s, box-shadow linear .2s;
@@ -303,26 +312,26 @@ img{
 }
 
 .about-col p{
-    font-size: 28px;
-    color: #aaa;
-    margin-top: 45px;
+    font-size: 30px;
+    color: #aaad;
+    margin-top: 30px;
 }
 
 .officers{
     background-color: unset;
 }
 
-#officer-section-intro{
-    left: 37.5%;
-
+.officer-container{
+    padding-top: 80px;
 }
 
-#officer-intro{
-    width: 300px;
+.officer-name{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
-.row-comp{
-    width: 100%;
+.row{
     clear: both;
     position: relative;
     min-height: 1px;
@@ -330,34 +339,35 @@ img{
     padding-right: 15px;
 }
 
-.row-offsec{
-    clear: both;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+.two-col{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #aaad;
+    font-size: 18px;
 }
 
-.row-defsec{
-    clear: both;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+.two-col h2{
+    text-decoration: underline;
 }
 
-.row-prog{
-    clear: both;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+.two-col p a{
+    color: #aaad;
+    text-decoration: none;
+    text-align: center;
+}
+
+.two-col p a:visited{
+    color: #aaad;
+    text-decoration: none;
 }
 
 .three-col{
-    width: 33%;
+    width: 33.33333333%;
     float: left;
     text-align: center;
+    color: #aaad;
+    font-size: 18px;
 }
 
 .three-col img{
@@ -365,12 +375,12 @@ img{
     padding-left: 5px;
 }
 
-.three-col p{
-    color: #aaaaaa;
-    font-size: 18px;
-}
-
 .four-col{
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #aaad;
+    font-size: 18px;
 }
 
 .calendar{
@@ -390,7 +400,7 @@ img{
     position: relative;
     min-height: 1px;
     overflow: hidden;
-    border: 10px solid #111;
+    border: 3px solid #aaad;
     border-radius: 180px;
 
 }
@@ -398,7 +408,7 @@ img{
 .calendar-col iframe{
     position: relative;
     width: 100%;
-    height: 815px;
+    height: 820px;
     background-color: white;
     margin-top: -105px;
     border: 0px;
@@ -407,6 +417,7 @@ img{
 
 #cal-event-header{
     margin-top: 0px;
+    width: 185px;
 }
 
 .footer{
@@ -414,96 +425,17 @@ img{
 }
 
 .footer-info{
-    color: white;
+    color: #aaad;
     padding-top: 30px;
 }
 
 .footer-info a{
-    color: white;
+    color: #aaad;
 }
 
 .footer-info a:visited{
-    color: white;
+    color: #aaad;
 }
-
-/*div#clearback1 {*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    background-color: unset;*/
-/*    height: 200px;*/
-/*    top: 100%;*/
-/*}*/
-
-/*div#about{*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    background-color: #292e33;*/
-/*    height: 700px;*/
-/*    top: 100%;*/
-/*    opacity: 100%;*/
-
-/*}*/
-
-
-
-/*div#about section {*/
-/*    color: #aaaaaa;*/
-/*    padding-top: 100px;*/
-/*    padding-bottom: 80px;*/
-/*}*/
-
-/*div#about section h1 {*/
-/*    text-align: center;*/
-/*    font-size: 50px;*/
-/*    margin-top: -40px;*/
-/*}*/
-
-/*div#first-col-about {*/
-/*    width: 50%;*/
-/*    float: left;*/
-/*    position: relative;*/
-/*    padding-left: 15px;*/
-/*    padding-right: 15px;*/
-/*}*/
-
-/*div#first-col-about img {*/
-/*    width: 670px;*/
-/*}*/
-
-/*div#last-col-about {*/
-/*    width: 50%;*/
-/*    float: left;*/
-/*    position: relative;*/
-/*    padding-left: 15px;*/
-/*    padding-right: 15px;*/
-/*}*/
-
-
-/*div#computer{*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    background-color: #111;*/
-/*    height: 500px;*/
-/*    top: 200%;*/
-
-/*    border: 0px solid #cccccc;*/
-
-/*    -webkit-transition: border linear .2s, box-shadow linear .2s;*/
-/*    -moz-transition: border linear .2s, box-shadow linear .2s;*/
-/*    -o-transition: border linear .2s, box-shadow linear .2s;*/
-/*    transition: border linear .2s, box-shadow linear .2s;*/
-/*}*/
-
-/*div#computer:focus*/
-/*{*/
-/*    border-color: rgba(82, 168, 236, 0.8);*/
-/*    outline: 0;*/
-/*    outline: thin dotted \9;*/
-/*    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px     rgba(82,168,236,.6);*/
-/*    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);*/
-/*    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);*/
-/*}*/
-
 
 /* Media qurey section */
 
@@ -754,10 +686,6 @@ img{
 }
 
 
-
-
-
-
 .myH2 {
     text-align:center;
     font-size: 4rem;
@@ -772,4 +700,43 @@ img{
     .myP {
         padding:2%;
     }
+}
+
+.topics{
+    background-color: #111;
+}
+
+
+#topic-header{
+    width: 260px;
+}
+
+.current-events-comp{
+    background-color: unset;
+}
+
+#current-event-header{
+    width: 345px;
+}
+
+a{
+    color: #aaad;
+}
+
+a:visited{
+    color: #aaad;
+}
+
+.extra-padding{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.fill{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    height: 22.8%;
+    background-color: #111;
 }
