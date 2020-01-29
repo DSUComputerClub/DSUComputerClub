@@ -213,7 +213,7 @@ img{
 
 .col-container img#trojans{
     width: 200px;
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 .container-header {
@@ -237,7 +237,7 @@ img{
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: #aaad;
-    padding-left: 230px;
+    padding-left: 200px;
     padding-right: 22px;
     width: 1060px;
 }
