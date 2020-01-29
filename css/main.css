@@ -156,6 +156,7 @@ img{
     color: #aaad;
     line-height: 65px;
     font-size: 1.25rem;
+    display: flex;
 }
 
 .nav div.main_list ul li a:hover {
@@ -326,9 +327,10 @@ img{
 }
 
 .officer-name{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .row{
@@ -370,6 +372,18 @@ img{
     font-size: 18px;
 }
 
+.three-col-officers{
+    width: 33.33333333%;
+    float: left;
+    text-align: center;
+    color: #aaad;
+    font-size: 18px;
+    border-right: 1px solid #aaad;
+    border-left: 1px solid #aaad;
+    height: 200px;
+    margin-top: 50px;
+}
+
 .three-col img{
     width: 230px;
     padding-left: 5px;
@@ -381,6 +395,22 @@ img{
     text-align: center;
     color: #aaad;
     font-size: 18px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-right: 1px solid #aaad;
+    border-left: 1px solid #aaad;
+    height: 225px;
+    margin-top: 50px;
+}
+
+.four-col p{
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.three-col-officers p{
+    margin-bottom: 0px;
+    margin-top: 8px;
 }
 
 .calendar{
@@ -704,6 +734,7 @@ img{
 
 .topics{
     background-color: #111;
+    height: 336px;
 }
 
 
@@ -728,7 +759,6 @@ a:visited{
 }
 
 .extra-padding{
-    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -740,3 +770,8 @@ a:visited{
     height: 22.8%;
     background-color: #111;
 }
+
+/*.navlinks li a p{*/
+/*    margin: 0;*/
+/*    width: 120px;*/
+/*}*/
