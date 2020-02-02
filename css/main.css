@@ -212,8 +212,8 @@ img{
 }
 
 .col-container img#trojans{
-    width: 200px;
-    margin-left: 25px;
+    width: 250px;
+    margin-left: 20px;
 }
 
 .container-header {
@@ -237,15 +237,16 @@ img{
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: #aaad;
-    padding-left: 200px;
-    padding-right: 22px;
-    width: 1060px;
+    padding-top: 10px;
+    margin: auto;
+    width: 880px;
+    padding-left: 40px;
 }
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0% }
-    to { width: 90% }
+    to { width: 100% }
 }
 
 /* The typewriter cursor effect */
