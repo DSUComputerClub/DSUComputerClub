@@ -89,6 +89,9 @@ img{
 
 /* Navbar section */
 
+.nav_current {
+    border-bottom: 1px solid #aaad;
+}
 .nav {
     font-family: 'Raleway', sans-serif;
     width: 100%;
