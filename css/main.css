@@ -89,6 +89,9 @@ img{
 
 /* Navbar section */
 
+.nav_current {
+    border-bottom: 1px solid #aaaaaa;
+}
 .nav {
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -108,12 +111,12 @@ img{
 
 .nav div.logo a {
     text-decoration: none;
-    color: #aaad;
+    color: #aaaaaa;
     font-size: 1.25rem;
 }
 
 .nav div.logo a:hover {
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 .nav div.logo a span{
@@ -153,14 +156,14 @@ img{
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #aaad;
+    color: #aaaaaa;
     line-height: 65px;
     font-size: 1.25rem;
     display: flex;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 .navTrigger {
@@ -227,7 +230,7 @@ img{
 .col-container h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* The typwriter cursor */
-    border-right: .15em solid #aaad;
+    border-right: .15em solid #aaaaaa;
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation:
@@ -236,7 +239,7 @@ img{
 
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
-    color: #aaad;
+    color: #aaaaaa;
     padding-top: 10px;
     margin: auto;
     width: 880px;
@@ -258,14 +261,14 @@ img{
 
 
 .section-intro{
-    color: #aaad;
+    color: #aaaaaa;
     margin: auto;
     padding-bottom: 10px;
     font-size: 22px;
 }
 
 .section-intro h1{
-    border-bottom: 2px solid #aaad;
+    border-bottom: 2px solid #aaaaaa;
     border-radius: 12px;
     width: 227px;
     opacity: 100%;
@@ -274,13 +277,14 @@ img{
 
 #officer-header{
     font-size: 57px;
-    border-color: #aaad;
-    color: #aaad;
+    border-color: #aaaaaa;
+    color: #aaaaaa;
     width: 300px;
 }
 
 .about{
     background-color: #1e2125;
+    padding-top: 60px;
 }
 
 .about-col{
@@ -293,7 +297,7 @@ img{
 
 .about-col img{
     width: 465px;
-    border: 2.5px solid #aaad;
+    border: 2.5px solid #aaaaaa;
     margin-left: 80px;
     margin-top: 30px;
     border-radius: 30px;
@@ -316,7 +320,7 @@ img{
 
 .about-col p{
     font-size: 30px;
-    color: #aaad;
+    color: #aaaaaa;
     margin-top: 30px;
 }
 
@@ -347,7 +351,7 @@ img{
     width: 50%;
     float: left;
     text-align: center;
-    color: #aaad;
+    color: #aaaaaa;
     font-size: 18px;
 }
 
@@ -356,13 +360,13 @@ img{
 }
 
 .two-col p a{
-    color: #aaad;
+    color: #aaaaaa;
     text-decoration: none;
     text-align: center;
 }
 
 .two-col p a:visited{
-    color: #aaad;
+    color: #aaaaaa;
     text-decoration: none;
 }
 
@@ -370,7 +374,7 @@ img{
     width: 33.33333333%;
     float: left;
     text-align: center;
-    color: #aaad;
+    color: #aaaaaa;
     font-size: 18px;
 }
 
@@ -378,10 +382,10 @@ img{
     width: 33.33333333%;
     float: left;
     text-align: center;
-    color: #aaad;
+    color: #aaaaaa;
     font-size: 18px;
-    border-right: 1px solid #aaad;
-    border-left: 1px solid #aaad;
+    border-right: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
     height: 200px;
     margin-top: 50px;
 }
@@ -395,12 +399,12 @@ img{
     width: 25%;
     float: left;
     text-align: center;
-    color: #aaad;
+    color: #aaaaaa;
     font-size: 18px;
     padding-right: 18px;
     padding-left: 18px;
-    border-right: 1px solid #aaad;
-    border-left: 1px solid #aaad;
+    border-right: 1px solid #aaaaaa;
+    border-left: 1px solid #aaaaaa;
     height: 225px;
     margin-top: 50px;
 }
@@ -432,7 +436,7 @@ img{
     position: relative;
     min-height: 1px;
     overflow: hidden;
-    border: 3px solid #aaad;
+    border: 3px solid #aaaaaa;
     border-radius: 180px;
 
 }
@@ -457,16 +461,16 @@ img{
 }
 
 .footer-info{
-    color: #aaad;
+    color: #aaaaaa;
     padding-top: 30px;
 }
 
 .footer-info a{
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 .footer-info a:visited{
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 /* Media qurey section */
@@ -753,11 +757,11 @@ img{
 }
 
 a{
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 a:visited{
-    color: #aaad;
+    color: #aaaaaa;
 }
 
 .extra-padding{
