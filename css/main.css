@@ -18,22 +18,25 @@ header{
     position: relative;
     overflow: hidden;
     display: block;
-    min-height: 100vh;
+    
     box-sizing: border-box;
 }
 
 section{
-    padding-top: 30px;
-    padding-bottom: 65px;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
     position: relative;
     overflow: hidden;
 }
 
+/* dunno what do
 img{
     max-width: 100%;
     vertical-align: middle;
     border: 0;
 }
+*/
 
 /* ---- stats.js ---- */
 
@@ -86,19 +89,27 @@ img{
     position: fixed;
 }
 
+.nav {
+    z-index: 2;
+}
 
-/* Navbar section */
+header img {
+    width: 50%;
+}
+
+/* Navbar section 
 
 .nav_current {
     border-bottom: 1px solid #aaaaaa;
 }
 .nav {
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+   /* width: 100%;
     height: 45px;
     position: fixed;
     line-height: 65px;
     text-align: center;
+    
     z-index: 1;
 }
 
@@ -169,15 +180,17 @@ img{
 .navTrigger {
     display: none;
 }
-
+*/
+/*
 .nav {
     padding-top: 0px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+*/
 
-/* What we see when the page opens up */
+/* What we see when the page opens up 
 
 
 
@@ -229,10 +242,10 @@ img{
 
 .col-container h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* The typwriter cursor */
+    /* The typwriter cursor 
     border-right: .15em solid #aaaaaa;
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
+    white-space: nowrap; /* Keeps the content on a single line 
+    letter-spacing: .15em; /* Adjust as needed 
     animation:
             typing 1s steps(40, end),
             blink-caret .75s step-end infinite;
@@ -246,10 +259,26 @@ img{
     padding-left: 40px;
 }
 
+*/
+.page-heading {
+    overflow: hidden;
+    border-right: .15em solid #aaaaaa;
+    
+    letter-spacing: .15em;
+    animation:
+        typing 1s steps(40, end),
+        blink-caret .75s step-end infinite;
+    color: #aaaaaa;
+    margin: auto;
+}
+
 /* The typing effect */
 @keyframes typing {
-    from { width: 0% }
-    to { width: 100% }
+    from { 
+        width: 0%;
+        background-color: green;
+    }
+    to { width: 100%; background: none; }
 }
 
 /* The typewriter cursor effect */
