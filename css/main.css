@@ -354,16 +354,8 @@ section:nth-of-type(odd) {
     border-radius: 10px;
 }
 
-#discord-invite {
+.join-link {
     background-color: #7289da;
-}
-
-#slack-invite {
-    background-color: #611f69;
-}
-
-#email-list {
-    background-color: #673ab7;
 }
 
 .usual-time {
