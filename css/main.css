@@ -18,22 +18,26 @@ header{
     position: relative;
     overflow: hidden;
     display: block;
-    min-height: 100vh;
+    
     box-sizing: border-box;
 }
 
 section{
-    padding-top: 30px;
-    padding-bottom: 65px;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
     position: relative;
     overflow: hidden;
+    color: #aaaaaa
 }
 
+/* dunno what do
 img{
     max-width: 100%;
     vertical-align: middle;
     border: 0;
 }
+*/
 
 /* ---- stats.js ---- */
 
@@ -84,21 +88,30 @@ img{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     position: fixed;
+    z-index: -1;
 }
 
+.nav {
+   background-color: #181821;
+}
 
-/* Navbar section */
+header img {
+    width: 50%;
+}
+
+/* Navbar section 
 
 .nav_current {
     border-bottom: 1px solid #aaaaaa;
 }
 .nav {
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+   /* width: 100%;
     height: 45px;
     position: fixed;
     line-height: 65px;
     text-align: center;
+    
     z-index: 1;
 }
 
@@ -169,15 +182,17 @@ img{
 .navTrigger {
     display: none;
 }
-
+*/
+/*
 .nav {
     padding-top: 0px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+*/
 
-/* What we see when the page opens up */
+/* What we see when the page opens up 
 
 
 
@@ -229,10 +244,10 @@ img{
 
 .col-container h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* The typwriter cursor */
+    /* The typwriter cursor 
     border-right: .15em solid #aaaaaa;
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
+    white-space: nowrap; /* Keeps the content on a single line 
+    letter-spacing: .15em; /* Adjust as needed 
     animation:
             typing 1s steps(40, end),
             blink-caret .75s step-end infinite;
@@ -246,10 +261,26 @@ img{
     padding-left: 40px;
 }
 
+*/
+.page-heading {
+    overflow: hidden;
+    border-right: .15em solid #aaaaaa;
+    
+    letter-spacing: .15em;
+    animation:
+        typing 1s steps(40, end),
+        blink-caret .75s step-end infinite;
+    color: #aaaaaa;
+    margin: auto;
+}
+
 /* The typing effect */
 @keyframes typing {
-    from { width: 0% }
-    to { width: 100% }
+    from { 
+        width: 0%;
+        background-color: green;
+    }
+    to { width: 100%; background: none; }
 }
 
 /* The typewriter cursor effect */
@@ -264,16 +295,18 @@ img{
     color: #aaaaaa;
     margin: auto;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 175%;
 }
 
 .section-intro h1{
     border-bottom: 2px solid #aaaaaa;
     border-radius: 12px;
-    width: 227px;
+    max-width: 30%;
     opacity: 100%;
     margin: auto;
 }
+
+
 
 #officer-header{
     font-size: 57px;
@@ -282,6 +315,70 @@ img{
     width: 300px;
 }
 
+p {
+    font-size: 125%;
+    color: #aaaaaa;
+    
+}
+
+.card {
+    background-color: #191922;
+    border-radius: 10px;
+    color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-header {
+    font-size: 125%;
+}
+
+section small {
+    color: #aaaaaa;
+}
+
+section:nth-of-type(odd) {
+    background-color: #1e2125;
+    color: #aaaaaa;
+}
+
+#join a {
+    color: white;
+}
+
+#nav-join {
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
+.join-link {
+    background-color: #7289da;
+}
+
+.usual-time {
+    background-color: #191922;
+    color: white;
+    text-align: center;
+}
+
+.subclub-site-alert {
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 125%;
+}
+
+.subclub-site-alert a, .subclub-site-alert a:visited {
+    color: lightblue;
+}
+
+.subclub-site-btn, .subclub-site-btn:visited {
+    color: white;
+}
+
+/*
 .about{
     background-color: #1e2125;
     padding-top: 60px;
@@ -324,6 +421,7 @@ img{
     margin-top: 30px;
 }
 
+*/
 .officers{
     background-color: unset;
 }
@@ -340,11 +438,7 @@ img{
 }
 
 .row{
-    clear: both;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .two-col{
