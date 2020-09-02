@@ -17,115 +17,135 @@
 
 <body onload="particlesJS.load('particles-js', 'js/particles.json')">
 
-    <nav class="navbar navbar-dark navbar-expand-md nav">
-        <a class="navbar-brand" href="#">
-            <img src="img/TrojanHead-removebg-preview.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Dakota State University
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#nav-content" aria-controls="nav-content"
-            aria-expanded="false" aria-label="Toggle navigation">
-
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav-content">
-            <ul class="navbar-nav ml-auto">
-                <li id="nav_home" class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item" id="nav_about">
-                    <a class="nav-link" href="index.html#about">About</a>
-                </li>
-                <li class="nav-item" id="nav_join">
-                    <a class="nav-link" href="index.html#join">Join</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="comp.html">CompClub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="defsec.html">DefSec</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="offsec.html">OffSec</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="prog.html">ProgClub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:mason.schmidgall@trojans.dsu.edu?subject=[CC Website]">Contact</a>
-                </li>
-            </ul>
+    <div class="container-fluid sticky-top">
+        <nav class="navbar navbar-dark navbar-expand-md nav">
+            <a class="navbar-brand" href="#">
+                <img src="img/TrojanHead-removebg-preview.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Dakota State University
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#nav-content" aria-controls="nav-content"
+                aria-expanded="false" aria-label="Toggle navigation">
+    
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav ml-auto">
+                    <li id="nav_home" class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item" id="nav_join">
+                        <a id="nav-join" class="nav-link" href="index.html#join">Join</a>
+                    </li>
+                    <li class="nav-item" id="nav_about">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comp.html">CompClub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="defsec.html">DefSec</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offsec.html">OffSec</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prog.html">ProgClub</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         </div>
-    </nav>
 
     <div id="particles-js"></div>
+
+    <header>
+        <div class="section-intro text-center mb-4">
+            <h1>Computer Club</h1>
+        </div>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati quas non voluptate veniam libero, fuga beatae exercitationem hic officiis, minima, impedit culpa. Deleniti voluptatem nesciunt atque iste porro ab?
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section-intro text-center mb-4"><h1 id="topic-header">Meetings</h1></div>
+            <div class="alert usual-time">
+                Usual club meeting time: Every Monday, 5:30 PM
+            </div>
+            <div class="card-deck">
+                
+                <div class="card mb-4">
+                    <div class="card-header">This Week</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Computer Club Kickoff</h3>
+                        <p class="card-text">Computer Club will be hosting a joint meeting with
+                            all the subclubs (Defsec, Offsec, and Programming) to kick-start the year.
+
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        09/03 Thursday 5:30 PM
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">Next Week</div>
+                    <div class="card-body">
+                        <h3 class="card-title">To be announced</h3>
+                        
+                    </div>
+                    <div class="card-footer">
+                        09/07 Monday 5:30 PM
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section class="officers">
-        <div class="container officer-container">
-                <div class="container">
-                    <div class="section-intro text-center"><h1 id="officer-header">OFFICERS</h1></div>
-                    <div class="row">
-                        <div class="four-col">
-                            <h3 class="officer-name">Rayanne Liester</h3>
-                            <p>B.S Cyber Operations</p>
-                            <p style="margin-top: 55px">President</p>
-                        </div>
-                        <div class="four-col">
-                            <h3 class="officer-name">Austin Elbert</h3>
-                            <p>B.S Cyber Operations</p>
-                            <p style="margin-top: 28px">Vice President</p>
-                        </div>
-                        <div class="four-col">
-                            <h3 class="officer-name">Nick Sandison</h3>
-                            <p>B.S Cyber Operations</p>
-                            <p style="margin-top: 28px">Secretary</p>
-                        </div>
-                        <div class="four-col">
-                            <h3 class="officer-name">Mason Schmidgall</h3>
-                            <p>B.S Cyber Operations</p>
-                            <p>B.S Network and Security Administration</p>
-                            <p style="margin-top: 28px">Treasurer</p>
-                        </div>
+
+        <div class="container">
+            <div class="section-intro text-center mb-4"><h1>Officers</h1></div>
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <div class="card-header">President</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Rayanne Liester</h3>
+                        <p class="card-text">B.S Cyber Operations</p>
                     </div>
                 </div>
-        </div>
-    </section>
-    <section class="topics">
-        <div class="container topic-container">
-            <div class="container">
-                <div class="section-intro text-center"><h1 id="topic-header">This Week</h1></div>
-                <div class="row">
-                    <div class="two-col">
-                        <h2 style="text-decoration: unset">No Meeting</h2>
-<!--                        <h2 style="text-decoration: none">Bash w/ Bailey</h2>-->
-<!--                        <p>This week Bailey will be presenting on bash and giving everyone an insight of its cool features that will make you more efficient on the command line. Also, MITRE will be coming to talk about opportunities with them and maybe even stick around!</p>-->
+                <div class="card mb-4">
+                    <div class="card-header">Vice President</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Austin Elbert</h3>
+                        <p class="card-text">B.S Cyber Operations</p>
                     </div>
-                    <div class="two-col">
-                        <h2>Links</h2>
-<!--                        <p><a href="https://attendance.dsucomputer.club" target="_blank">Attendance</a></p>-->
-<!--                        <p><a href="https://docs.google.com/presentation/d/1ExZtHet9JY187yaGPL45ybs5DGm35-ZioDkbdtFN-mk/edit?usp=sharing" target="_blank">Slides</a></p>-->
+                </div>
+            </div>
+            <div class="card-deck">                
+                <div class="card mb-4">
+                    <div class="card-header">Secretary</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Nick Sandison</h3>
+                        <p class="card-text">B.S Cyber Operations</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">Treasurer</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mason Schmidgall</h3>
+                        <p class="card-text">B.S Cyber Operations</p>
+                        <p class="card-text">B.S Network and Security Administration</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="current-events-comp">
-        <div class="container topic-container">
-            <div class="container">
-                <div class="section-intro text-center extra-padding"><h1 id="current-event-header">Current Events</h1></div>
-                <div class="row">
-                    <div class="three-col">
-                        <h2 style="text-align: right; margin-right: 40px;"><a target="_blank" href="https://www.sciencealert.com/scientists-want-to-explore-the-ocean-with-human-controlled-bionic-jellyfish">Bionic Jellyfish</a></h2>
-                    </div>
-                    <div class="three-col">
-                        <h2 style="width: 250px; margin:auto; margin-top: 15px;"><a href="https://www.tomsguide.com/reviews/samsung-galaxy-z-flip" target="_blank">Samsung Galaxy Z Flip</a></h2>
-                    </div>
-                    <div class="three-col">
-                        <h2 style="width: 200px; margin: auto; margin-top: 15px; margin-right: 200px;"><a target="_blank" href="https://www.theverge.com/2020/2/21/21147004/hot-wheels-tesla-cybertruck-rc-car-remote-controlled-toy">Hot Wheels Cybertruck</a></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    
     <section class="footer" style="background-color: #111">
         <div class="container">
             <div class="row">

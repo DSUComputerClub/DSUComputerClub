@@ -20,7 +20,10 @@
 
 <body onload="particlesJS.load('particles-js', 'js/particles.json')">
 
-    <nav class="navbar navbar-dark navbar-expand-md nav sticky-top">
+    <div id="particles-js"></div>
+
+    <div class="container-fluid sticky-top">
+    <nav class="navbar navbar-dark navbar-expand-md nav">
         <a class="navbar-brand" href="#">
             <img src="img/TrojanHead-removebg-preview.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             Dakota State University
@@ -36,11 +39,11 @@
                 <li id="nav_home" class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
+                <li class="nav-item" id="nav_join">
+                    <a id="nav-join" class="nav-link" href="index.html#join">Join</a>
+                </li>
                 <li class="nav-item" id="nav_about">
                     <a class="nav-link" href="index.html#about">About</a>
-                </li>
-                <li class="nav-item" id="nav_join">
-                    <a class="nav-link" href="index.html#join">Join</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="comp.html">CompClub</a>
@@ -54,14 +57,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="prog.html">ProgClub</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:mason.schmidgall@trojans.dsu.edu?subject=[CC Website]">Contact</a>
-                </li>
             </ul>
         </div>
     </nav>
-
-    <div id="particles-js"></div>
+    </div>
     <div id="main">
         <header>
             <div class="container-fluid mt-md-5">
@@ -76,39 +75,45 @@
             </div>
         </header>
 
+        <section class="join" id="join">
+            <div class="container">
+                <div class="section-intro text-center mb-4">
+                    <h1>Join Us</h1>
+
+                </div>
+                <h4>Use these links to get started in DSU's Computer Clubs</h4>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <a id="discord-invite" class="btn btn-block btn-primary" href="https://discord.gg/8aq4T2A" target="_blank" rel="noopener noreferrer">Help Night Discord</a>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <a id="slack-invite" class="btn btn-block btn-primary" href="https://kernelpoppers.slack.com" target="_blank" rel="noopener noreferrer">Kernel Poppers Slack</a>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <a id="email-list" class="btn btn-block btn-primary" href="">Email List</a>
+                    </div>
+                </div>
+                <small class="text-center">Note: The Help Night discord and kernelpoppers Slack are not officially affiliated with DSU</small>
+            </div>
+        </section>
+
         <section class="about" id="about">
             <div class="container">
                 <div class="section-intro text-center">
                     <h1>About Us</h1>
                 </div>
-                <div class="row">
-                    <div class="about-col">
-                        <img src="img/CClub.jpg" alt=""/>
+                <div class="row mt-2">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="img-fluid rounded float-left" src="img/CClub.jpg" alt=""/>
                     </div>
-                    <div class="about-col">
+                    <div class="col-xs-12 col-lg-6">
                         <p>Computer Club believes that education goes far beyond the classroom at DSU. As a student-led club, we are dedicated to supplementing classroom education by hosting competitions, tech talks, and shedding light on current industry events. Computer Club members have competed with great success at local, regional, and national competitions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="join" id="join">
-            <div class="container">
-                <div class="section-intro text-center">
-                    <h1>Join Us</h1>
-                </div>
-                <div class="row">
-                    <div class="two-col">
-                        <a href="https://discord.gg">CC Meetings and Help Night Discord</a>
-                    </div>
-                    <div class="two-col">
-                        <a href="">Kernel Poppers Slack</a>
-                    </div>
-                </div>
-                <p>Note: these online channels of communication are neither officially endorsed by nor affiliated with DSU</p>
-            </div>
-        </section>
-
+        <!--
         <section class="calendar" id="events">
             <div class="container">
                 <div class="section-intro text-center">
@@ -121,6 +126,7 @@
                 </div>
             </div>
         </section>
+    -->
 
         <section class="footer" id="contact">
             <div class="container">

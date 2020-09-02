@@ -28,6 +28,7 @@ section{
     padding-bottom: 3%;
     position: relative;
     overflow: hidden;
+    color: #aaaaaa
 }
 
 /* dunno what do
@@ -87,10 +88,11 @@ img{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     position: fixed;
+    z-index: -1;
 }
 
 .nav {
-    z-index: 2;
+   background-color: #181821;
 }
 
 header img {
@@ -293,16 +295,18 @@ header img {
     color: #aaaaaa;
     margin: auto;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 175%;
 }
 
 .section-intro h1{
     border-bottom: 2px solid #aaaaaa;
     border-radius: 12px;
-    width: 227px;
+    max-width: 30%;
     opacity: 100%;
     margin: auto;
 }
+
+
 
 #officer-header{
     font-size: 57px;
@@ -311,6 +315,74 @@ header img {
     width: 300px;
 }
 
+p {
+    font-size: 125%;
+    color: #aaaaaa;
+    
+}
+
+.card {
+    background-color: #191922;
+    border-radius: 10px;
+    color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-header {
+    font-size: 125%;
+}
+
+section small {
+    color: #aaaaaa;
+}
+
+section:nth-of-type(odd) {
+    background-color: #1e2125;
+    color: #aaaaaa;
+}
+
+#join a {
+    color: white;
+}
+
+#nav-join {
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
+#discord-invite {
+    background-color: #7289da;
+}
+
+#slack-invite {
+    background-color: #611f69;
+}
+
+#email-list {
+    background-color: #673ab7;
+}
+
+.usual-time {
+    background-color: #191922;
+    color: white;
+    text-align: center;
+}
+
+.subclub-site-alert {
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 125%;
+}
+
+.subclub-site-alert a, .subclub-site-alert a:visited {
+    color: lightblue;
+}
+
+/*
 .about{
     background-color: #1e2125;
     padding-top: 60px;
@@ -353,6 +425,7 @@ header img {
     margin-top: 30px;
 }
 
+*/
 .officers{
     background-color: unset;
 }
@@ -369,11 +442,7 @@ header img {
 }
 
 .row{
-    clear: both;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .two-col{
