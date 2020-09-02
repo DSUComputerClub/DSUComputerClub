@@ -294,19 +294,17 @@ header img {
 .section-intro{
     color: #aaaaaa;
     margin: auto;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     font-size: 175%;
 }
 
 .section-intro h1{
-    border-bottom: 2px solid #aaaaaa;
+    /*border-bottom: 2px solid #aaaaaa;
     border-radius: 12px;
     max-width: 30%;
-    opacity: 100%;
+    opacity: 100%;*/
     margin: auto;
 }
-
-
 
 #officer-header{
     font-size: 57px;
